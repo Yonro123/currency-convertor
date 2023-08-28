@@ -1,0 +1,8 @@
+.btn {
+  padding: 10px;
+  border: 1px solid gray;
+  background-color: white;
+}
+.btn.active {
+  background-color: chartreuse;
+}
