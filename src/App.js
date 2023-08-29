@@ -1,5 +1,4 @@
 import Currency from "./components/Currency/Currency";
-import { useEffect, useState } from "react";
 
 import "./App.css";
 

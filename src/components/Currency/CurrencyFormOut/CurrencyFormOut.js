@@ -3,7 +3,6 @@ import CurrencyForm from "../CurrencyForm/CurrencyForm";
 export default function CurrencyFormOut({
   courses,
   inputValueOut,
-  setInputValueOut,
   activeCourseOut,
   setActiveCourseOut,
   activeCourseIn,
@@ -17,16 +16,14 @@ export default function CurrencyFormOut({
     }
     setActiveCourseOut(buttonValue);
   };
-  const onChange = (e) => {
-    setInputValueOut(e.target.value);
-  };
+
   return (
     <CurrencyForm
       buttonValues={courses}
       inputValue={inputValueOut}
       activeButton={activeCourseOut}
       onClick={onClick}
-      onChange={onChange}
+      onChange={() => {}}
     />
   );
 }

@@ -1,7 +1,7 @@
 export default async function FetchCurrencyData() {
   try {
     const response = await fetch(
-      "http://data.fixer.io/api/latest?access_key=55bbbe69909874dcb3468bd96f4fcf3a&symbols=USD,RUB,GBP"
+      "http://data.fixer.io/api/latest?access_key=1b63e5795eb3b365f4b18dc8a42fee52&symbols=USD,RUB,GBP"
     );
     if (response.status === 200) {
       return response.json();

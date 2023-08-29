@@ -13,8 +13,8 @@ const Currency = () => {
   const [activeCourseIn, setActiveCourseIn] = useState(courses[0]);
   const [activeCourseOut, setActiveCourseOut] = useState(courses[1]);
 
-  const [inputValueIn, setInputValueIn] = useState("0");
-  const [inputValueOut, setInputValueOut] = useState("0");
+  const [inputValueIn, setInputValueIn] = useState(0);
+  const [inputValueOut, setInputValueOut] = useState(0);
 
   useEffect(() => {
     setActiveCourseIn(courses[0]);
@@ -67,7 +67,6 @@ const Currency = () => {
       <CurrencyFormOut
         courses={courses}
         inputValueOut={inputValueOut}
-        setInputValueOut={setInputValueOut}
         activeCourseOut={activeCourseOut}
         setActiveCourseOut={setActiveCourseOut}
         activeCourseIn={activeCourseIn}

@@ -29,7 +29,13 @@ export default function CurrencyFormIn({
     setActiveCourseIn(buttonValue);
   };
   const onChange = (e) => {
-    setInputValueIn(e.target.value);
+    if (!isNaN(e.target.value) && e.target.value.length < 19) {
+      if (e.target.value.length === 0) {
+        setInputValueIn(1);
+        return;
+      }
+      setInputValueIn(e.target.value);
+    }
   };
   return (
     <CurrencyForm
